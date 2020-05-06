@@ -1,11 +1,17 @@
-$(".hamburger").on("click", ()=>{$(".hamburger").toggleClass("d-none");$(".hamburger-unclickable").toggleClass("d-none");setTimeout(( ) => {
-	$(".hamburger-unclickable").toggleClass("d-none");
-$(".hamburger-close").toggleClass("d-none");
+$(".hamburger").on("click", ()=>{$(".hamburger span").toggleClass("fa-bars");$(".hamburger span").toggleClass("fa-times");$(".hamburger").toggleClass("unclickable");setTimeout(( ) => {
+	$(".hamburger").toggleClass("unclickable");
 
 }, 500);
-});$(".hamburger-close").on("click", ()=>{$(".hamburger-close").toggleClass("d-none");$(".hamburger-unclickable").toggleClass("d-none");setTimeout(( ) => {
-	$(".hamburger-unclickable").toggleClass("d-none");
-$(".hamburger").toggleClass("d-none");
+});$("#headingOne").on("click", ()=>{$("#headingOne .fa").toggleClass("fa-chevron-right");$("#headingOne .fa").toggleClass("fa-chevron-down");$("#headingOne").toggleClass("unclickable");setTimeout(( ) => {
+	$("#headingOne").toggleClass("unclickable");
+
+}, 500);
+});$("#headingTwo").on("click", ()=>{$("#headingTwo .fa").toggleClass("fa-chevron-right");$("#headingTwo .fa").toggleClass("fa-chevron-down");$("#headingTwo").toggleClass("unclickable");setTimeout(( ) => {
+	$("#headingTwo").toggleClass("unclickable");
+
+}, 500);
+});$("#headingThree").on("click", ()=>{$("#headingThree .fa").toggleClass("fa-chevron-right");$("#headingThree .fa").toggleClass("fa-chevron-down");$("#headingThree").toggleClass("unclickable");setTimeout(( ) => {
+	$("#headingThree").toggleClass("unclickable");
 
 }, 500);
 });$('.carousel').carousel({interval: 4000})
