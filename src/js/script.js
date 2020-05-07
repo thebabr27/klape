@@ -1,4 +1,4 @@
-$(".hamburger").on("click", ()=>{$(".hamburger span").toggleClass("fa-bars");$(".hamburger span").toggleClass("fa-times");$(".hamburger").toggleClass("unclickable");setTimeout(( ) => {
+$(".hamburger").on("click", ()=>{$(".overlay").toggleClass("h-100");$(".hamburger span").toggleClass("fa-bars");$(".hamburger span").toggleClass("fa-times");$(".hamburger").toggleClass("unclickable");setTimeout(( ) => {
 	$(".hamburger").toggleClass("unclickable");
 
 }, 500);
